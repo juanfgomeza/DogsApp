@@ -10,8 +10,10 @@ class Config:
 
 class DevelopmentConfig(Config):
     ENV = 'development'
-
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://garagelab:password123@localhost/dog'
+    
 
 class ProductionConfig(Config):
-    pass
+    ENV = 'production'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://b38e624b36920a:4091778d@us-cdbr-east-06.cleardb.net/heroku_f9d43f2f20fae70'
+    
