@@ -20,6 +20,5 @@ class ProductionConfig(Config):
     dbServer = os.environ.get('DB_SERVER')
     dbDatabase = os.environ.get('DB_DATABASE')
     SQLALCHEMY_DATABASE_URI = f'mysql+pymysql://{dbUser}:{dbPassword}@{dbServer}/{dbDatabase}'    
-    #SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://b38e624b36920a:4091778d@us-cdbr-east-06.cleardb.net/heroku_f9d43f2f20fae70'    
     #How to make it reconnect?
     
